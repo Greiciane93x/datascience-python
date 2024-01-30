@@ -1,0 +1,10 @@
+pytest==4.6.5
+pytest-cov
+awsglue-local
+pyspark
+pytest_spark
+mock
+pyspark_test
+boto3
+moto
+
