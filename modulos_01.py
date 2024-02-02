@@ -9,3 +9,23 @@ my_regex = re.compile("[0-9]+", re.I)
 # Se já houve outro re no código, você pode usar um alias:
 # import re as regex
 # my_regex = regex.compile("[0-9]+", regex.I)
+# Você pode fazer isso se o módulo tiver um nome complicado ou se precisar digitar um trecho muito longo. Por exemplo,
+# para visualizar dados com o matplotlib, existe um padrão:
+
+
+#import matplotlib as plt
+# plt.plot(... )
+
+#Para obter valores específicos de um módulo, você pode importá-los expressamente e usá-los sem qualificação:
+
+# from collections import defaultdict, Counter
+# lookup = defaultdict(int)
+# my_counter = Counter()
+
+# Para fazer uma bagunça, você pode importar o conteúdo inteiro de um módulo para o namespace, substituindo (sem querer)as variáveis definidas
+# anteriormente :
+
+# match = 10
+# from re import *  # opa o re tem uma função match
+# print(match)      # "<function match at 0x10281e6a8>"
+# Mas, como você não é bagunceiro, nunca faça isso
