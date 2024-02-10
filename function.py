@@ -36,6 +36,7 @@ def my_print(message="my default message"):
 def full_name(first="What's his name?", last="Something"):
     return first + " " + last
 
-    full_name("Joel", "Grus")
-    full_name("Joel")
-    full_name(last="Grus")
+
+full_name("Joe,l", "Grus")  # "Joel Grus"
+full_name("Joel")                    # "Joel"
+full_name(last="Grus")               # "What's-his-name Grus"
