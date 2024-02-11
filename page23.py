@@ -18,3 +18,36 @@ print(f'first_three: {first_three}\n'
       f'without_first_and_last: {without_first_and_last}\n'
       f'copy_of_x: {copy_of_x}\n'
       )
+
+"""Do mesmo modo, você pode fatiar strings e outros tipos de sequências
+A fatia pode receber um terceiro argumento para indicar seu stride, que pode ser negativo 
+"""
+
+every_third = x[::3]
+five_to_three = x[5:2:-1]
+
+print(f'every_third: {every_third}\n')
+print(f'five_to_three: {every_third}\n')
+
+"""O Python dispõe de um operador in para verificar a associação à lista"""
+
+a1 = 1 in [1, 2, 3]
+a2 = 0 in [1, 2, 3]
+
+print(f'{a1}\n'
+      f'{a2}')
+
+"""Como essa verificação analisa todos os elementos da lista, você só deve executá-la se a lista for bem pequena
+(ou se o tempo da verificação não for importante)"""
+"""É fácil concatenar lista. Para modificar a lista, você pode usar extend e adicionar itens de outra coleção:"""
+
+x = [1, 2, 3]
+x.extend([4, 5, 6])
+
+print(f'approach 1: {x}')
+
+"""Se não quiser modificar x, você pode usar a adição de listas"""
+x = [1, 2, 3]
+y = x + [4, 5, 6]
+
+print(f'approach 2: {y}')
