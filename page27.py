@@ -21,8 +21,6 @@ print(f'dd_dict = {dd_dict}')
 dd_pair = defaultdict(lambda: [0, 0])
 dd_pair[2][1] = 1
 
-print(f'dd_pair = {dd_pair}')
-
 
 """Isso será útil quando usarmos dicionário para coletar os resultados de alguma chave sem verificar se ela existe a 
 cada operação"""
