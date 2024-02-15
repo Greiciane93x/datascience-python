@@ -23,6 +23,24 @@ dd_pair[2][1] = 1
 
 print(f'dd_pair = {dd_pair}')
 
-
 """Isso será útil quando usarmos dicionário para coletar os resultados de alguma chave sem verificar se ela existe a 
 cada operação"""
+
+# Contadores
+"""O Counter (contador) converte uma sequência de valores em algo parecido com objetivo defaultdict(int) mapenado
+as chaves correspondentes às contagens: """
+
+from collections import Counter
+
+c = Counter([0, 1, 2, 0])
+print(f'c: {c}')
+
+"""Essa é uma forma bem simples de resolver o problema do word_counts: """
+
+word_counts = Counter(document)
+
+"""Uma instância Counter contém um método most_common bastante útil: """
+
+for word, count in word_counts.most_common(10):
+    print(word, count)
+
